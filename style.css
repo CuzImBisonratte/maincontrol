@@ -63,3 +63,17 @@ li i {
     grid-area: footer;
     background-color: #333333;
 }
+
+
+/* 
+Notification stuff
+*/
+
+#notif_container {
+    height: 80vh;
+    position: fixed;
+    z-index: 500;
+    right: 2.5rem;
+    top: 2.5rem;
+}
+
