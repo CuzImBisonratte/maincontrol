@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 html,
 body {
     width: 100%;
@@ -7,6 +8,8 @@ body {
     top: 0;
     left: 0;
     background-color: #2f2f2f;
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
 }
 
 .main-grid {
@@ -22,6 +25,34 @@ body {
 .nav {
     grid-area: nav;
     background-color: #222222;
+    padding: 2.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+    margin: 0.1em;
+    border-radius: 1rem;
+}
+
+li:hover {
+    background-color: #2f2f2f;
+}
+
+li i {
+    margin-right: 1rem;
 }
 
 .main {
