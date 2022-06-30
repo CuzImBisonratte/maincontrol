@@ -77,3 +77,51 @@ Notification stuff
     top: 2.5rem;
 }
 
+.notif_bubble {
+    height: 5rem;
+    width: 10rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "notif_bubble_title" "notif_bubble_inner";
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    animation: animation_error 1s ease 0s 1 normal forwards;
+}
+
+.notif_bubble_title {
+    grid-area: notif_bubble_title;
+    font-size: 1.2rem;
+}
+
+.notif_bubble_inner {
+    grid-area: notif_bubble_inner;
+}
+
+.notif_bubble_warning {
+    background-color: #880000;
+}
+
+.notif_bubble_neutral {
+    background-color: #232368;
+}
+
+.notif_bubble_good {
+    background-color: #008800;
+}
+
+@keyframes animation_error {
+    0% {
+        opacity: 0;
+        transform: translateX(5rem);
+        display: block;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
