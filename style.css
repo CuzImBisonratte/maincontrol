@@ -91,6 +91,39 @@ Main containers
 
 
 /* 
+DB-Saver
+*/
+
+
+/* left side */
+
+.db_save_actions_row {
+    width: fit-content;
+    background-color: #222222;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.db_save_action {
+    min-width: 50px;
+    width: 10rem;
+    height: 5rem;
+    background-color: #327fa8;
+    border: #222222 1px solid;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    display: inline-flex;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.db_save_action:hover {
+    background-color: #226f98;
+}
+
+
+/* 
 Footer 
 */
 
