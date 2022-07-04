@@ -58,7 +58,7 @@ li i {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
-    gap: 0px 0px;
+    gap: 0px 5px;
     grid-auto-flow: row;
     grid-template-areas: "divider_left divider_right";
 }
