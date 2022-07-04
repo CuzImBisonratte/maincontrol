@@ -102,11 +102,11 @@ DB-Saver
     background-color: #222222;
     padding: 1rem;
     margin-bottom: 1rem;
+    width: calc(100% - 4rem);
 }
 
 .db_save_action {
-    min-width: 50px;
-    width: 10rem;
+    width: calc(25% - 1.375rem);
     height: 5rem;
     background-color: #327fa8;
     border: #222222 1px solid;
