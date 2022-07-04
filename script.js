@@ -41,6 +41,22 @@ function notify(title, text, type) {
     notification_bubble.appendChild(notification_bubble_title);
     notification_bubble.appendChild(notification_bubble_text);
 
+    // Add the click listener
+    notification_bubble.addEventListener("click", function() {
+
+        // Remove the error message
+        notification_bubble.style.animation = "animation_error_out 1s ease 0s 1 normal forwards";
+
+        // Remove the error message after the animation is done
+        setTimeout(function() {
+
+            // Remove the error message
+            notification_bubble.style.display = "none";
+
+        }, 500);
+
+    });
+
     // Append the notification as a child to the notification container
     document.getElementById("notif_container").appendChild(notification_bubble);
 }
