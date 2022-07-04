@@ -53,9 +53,28 @@ li i {
     margin-right: 1rem;
 }
 
+
+/* 
+Main
+*/
+
 .main {
     grid-area: main;
+    padding: 1rem;
 }
+
+.module_container {
+    display: none;
+}
+
+#module_container_home {
+    display: block;
+}
+
+
+/* 
+Footer 
+*/
 
 .footer {
     grid-area: footer;

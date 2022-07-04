@@ -60,3 +60,55 @@ function notify(title, text, type) {
     // Append the notification as a child to the notification container
     document.getElementById("notif_container").appendChild(notification_bubble);
 }
+
+
+// 
+// Menu & Module loading
+// 
+
+// Function to hide unused module
+function hideModules() {
+
+    // Get all modules
+    const module_containers = document.getElementsByClassName("module_container");
+
+    // Loop through the modules
+    for (let j = 0; j < module_containers.length; j++) {
+
+        // Get module container
+        const module_container = module_containers[j];
+
+        // Hide module
+        module_container.style.display = "none";
+
+    }
+}
+
+// Function to load the modules
+function loadModule(module_name) {
+
+    // Get the module
+    const module_container = document.getElementById("module_container_" + module_name);
+
+    // Display the module
+    module_container.style.display = "block";
+}
+
+
+// Get all menu button elements
+const menu_buttons = document.getElementsByClassName("menu_item");
+
+// Loop through the menu buttons
+for (let i = 0; i < menu_buttons.length; i++) {
+    const menu_button = menu_buttons[i];
+
+    // Add the event listener
+    menu_button.addEventListener("click", function() {
+
+        // Hide all modules
+        hideModules();
+
+        // Run the loadModule function with the button as a param
+        loadModule(menu_button.id.replace("menu_button_load_module_", ""));
+    });
+}
