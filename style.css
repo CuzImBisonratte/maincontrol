@@ -15,7 +15,7 @@ body {
 .main-grid {
     height: 100vh;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: max(20%, 290px) min(80%, calc(100% - 290px));
     grid-template-rows: 95% 5%;
     gap: 0px 0px;
     grid-auto-flow: row;
