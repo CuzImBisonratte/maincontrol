@@ -34,9 +34,7 @@ ul {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
+.menu_item {
     width: 100%;
 }
 
