@@ -36,6 +36,7 @@ ul {
 
 .menu_item {
     width: 100%;
+    cursor: pointer;
 }
 
 li {
