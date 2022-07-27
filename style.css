@@ -122,6 +122,10 @@ DB-Saver
     background-color: #226f98;
 }
 
+.db_save_actions_row h2 {
+    margin: 0 auto 0.25rem 0.5rem;
+}
+
 
 /* right side */
 
