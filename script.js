@@ -136,3 +136,6 @@ function db_save_action_row_add_row() {
     document.getElementById("db_save_action_row_container").appendChild(cloned_action_row_element);
 }
 
+function db_save_action_run(action, db_name) {
+    console.log("Action: " + action + "\nDB: " + db_name);
+}

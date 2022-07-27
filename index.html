@@ -47,16 +47,16 @@
                     <div class="divider_left">
                         <div class="db_save_actions_row" id="db_save_action_row_db_hidden_for_copy">
                             <h2></h2>
-                            <div class="db_save_action" id="db_save_backup_structure">
+                            <div class="db_save_action" id="db_save_backup_structure" onclick="db_save_action_run('savestructure',this.parentNode.id.replace('db_save_action_row_db', ''));">
                                 <i class="fa-solid fa-folder-tree"></i>
                             </div>
-                            <div class="db_save_action" id="db_save_backup_data">
+                            <div class="db_save_action" id="db_save_backup_data" onclick="db_save_action_run('savedata',this.parentNode.id.replace('db_save_action_row_db', ''));">
                                 <i class="fa-solid fa-database"></i>
                             </div>
-                            <div class="db_save_action" id="db_save_backup_full">
+                            <div class="db_save_action" id="db_save_backup_full" onclick="db_save_action_run('savefull' ,this.parentNode.id.replace('db_save_action_row_db', ''));">
                                 <i class="fa-solid fa-play"></i>
                             </div>
-                            <div class="db_save_action" id="db_save_upload">
+                            <div class="db_save_action" id="db_save_upload" onclick="db_save_action_run('export' ,this.parentNode.id.replace('db_save_action_row_db', ''));">
                                 <i class="fa-solid fa-upload"></i>
                             </div>
                         </div>
