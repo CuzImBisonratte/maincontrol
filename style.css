@@ -126,6 +126,10 @@ DB-Saver
     margin: 0 auto 0.25rem 0.5rem;
 }
 
+#db_save_action_row_db_hidden_for_copy {
+    display: none;
+}
+
 
 /* right side */
 
