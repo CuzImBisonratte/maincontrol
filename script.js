@@ -112,3 +112,27 @@ for (let i = 0; i < menu_buttons.length; i++) {
         loadModule(menu_button.id.replace("menu_button_load_module_", ""));
     });
 }
+
+//
+// Taskspecific functions
+//
+function db_save_action_row_add_row() {
+
+    var db_save_action_row_db_name = prompt("db-name?");
+
+    // Get the copy element
+    var add_action_row_copy_element = document.getElementById("db_save_action_row_db_hidden_for_copy");
+
+    // Clone the element
+    var cloned_action_row_element = add_action_row_copy_element.cloneNode(true);
+
+    // Change the title
+    cloned_action_row_element.childNodes[1].innerText = db_save_action_row_db_name;
+
+    // Change the id of the cloned element
+    cloned_action_row_element.id = "db_save_action_row_db" + db_save_action_row_db_name;
+
+    // Append as child
+    document.getElementById("db_save_action_row_container").appendChild(cloned_action_row_element);
+}
+
